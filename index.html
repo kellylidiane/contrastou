@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Contrast ratio"
+    />
+    <title>Contrastou</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div id="settings">
+        <div id="colors-inputs">
+          <label for="color-1-b">
+            Cor de fundo
+            <div class="colors">
+              <input type="color" id="color-1" value="#ffffff" />
+              <input type="text" id="color-1-b" value="#FFFFFF" />
+            </div>
+          </label>
+          <label for="color-2-b">
+            Cor do texto
+            <div class="colors">
+              <input type="color" id="color-2" value="#000000" />
+              <input type="text" id="color-2-b" value="#000000" />
+            </div>
+          </label>
+        </div>
+        <div id="size-bold-inputs">
+          <label for="size">
+            <input type="number" id="size" min="16" max="30" value="16" />
+            Tamanho da fonte (px)
+          </label>
+          <label for="bold">
+            <input type="checkbox" id="bold" />
+            Negrito
+          </label>
+        </div>
+      </div>
+      <div class="a11y-levels">
+        <label for="accessibility-level">
+          Acessível?
+        </label>
+        
+        <div class="levels">
+          <p id="level-aa" class="yes">Nível AA: <span>Sim &#x2714;</span><span>Não &#x2716;</span></p>
+          <p id="level-aaa" class="yes">Nível AAA: <span>Sim &#x2714;</span><span>Não &#x2716;</span></p>  
+        </div>
+        <div class="progress-bar">
+          <p id="aa-text"><span>AA</span></p>
+          <p id="aa-arrow"><span>&#x2193;</span></p>
+          <progress id="accessibility-level" class="percent75" value="100" max="100">
+            100%
+          </progress>
+          <p id="aaa-arrow"><span>&#x2191;</span></p>
+          <p id="aaa-text"><span>AAA</span></p>
+        </div>
+      </div>
+      <div class="result -bold" id="result">
+        <p>Resultado</p>
+      </div>
+      <details><summary>Mais informações:</summary>
+        <details><summary><strong>Nível AA:</strong></summary>
+          <p>De acordo com o critério de sucesso <strong>1.4.3</strong> da WCAG: Textos (e imagens com texto) devem ter uma taxa de contraste entre a cor do fundo e a cor da fonte de, pelo menos, <strong>4.5:1</strong>. Se o texto for grande, essa taxa de contraste deve ser de, no mínimo, <strong>3:1</strong>.</p>
+          <p><a target="_blank" href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html">Fonte</a></p>
+        </details>
+        <details><summary><strong>Nível AAA:</strong></summary>
+          <p>O critério de sucesso <strong>1.4.6</strong> é um pouco mais exigente: o mínimo de taxa de contraste entre cor de fundo e cor de fonte deve ser de <strong>7:1</strong> em textos normais e <strong>4.5:1</strong> para texto grande.</p>
+          <p><a target="_blank" href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced">Fonte</a></p>
+        </details>
+        <details><summary><strong>Texto grande:</strong></summary>
+          <p>É considerado "texto grande" todo aquele com tamanho de fonte a partir de <strong>24px</strong> ou tamanho de fonte a partir de <strong>19px + negrito</strong>.</p>
+        </details>
+      </details>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>

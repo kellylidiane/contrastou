@@ -1,0 +1,161 @@
+#root {
+  min-width: 275px;
+}
+
+#root > div:first-child {
+  display: grid;
+  gap: 8px;
+}
+
+#settings {
+  font-size: 13px;
+}
+
+#size {
+  display: inline-block;
+}
+
+#colors-inputs, #size-bold-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.colors {
+  display: flex;
+}
+
+.colors input[type="color"] {
+  -webkit-appearance: none;
+    border: none;
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.colors input[type="text"] { 
+  width: 90px;
+}
+
+.a11y-levels {
+  margin: 12px 0;
+  font-size: 13px;
+}
+
+.a11y-levels label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.a11y-levels .levels {
+  margin: 8px 0;
+}
+
+.a11y-levels .levels .yes span {
+  color: green;
+}
+
+.a11y-levels .levels .no span {
+  color: #ab0000;
+}
+
+.a11y-levels .levels #level-aa.yes span:last-child,
+.a11y-levels .levels #level-aaa.yes span:last-child {
+  display: none;
+}
+
+.a11y-levels .levels #level-aa.no span:first-child,
+.a11y-levels .levels #level-aaa.no span:first-child {
+  display: none;
+}
+
+.a11y-levels #aa-text span,
+.a11y-levels #aa-arrow span {
+  margin-left: calc(18% - 12px);
+}
+
+.a11y-levels.large-text #aa-text span,
+.a11y-levels.large-text #aa-arrow span {
+  margin-left: calc(11% - 12px);
+}
+
+.a11y-levels #aaa-text span,
+.a11y-levels #aaa-arrow span {
+  margin-left: calc(30% - 12px);
+}
+
+.a11y-levels.large-text #aaa-text span,
+.a11y-levels.large-text #aaa-arrow span {
+  margin-left: calc(18% - 12px);
+}
+
+.a11y-levels #aa-arrow,
+.a11y-levels #aaa-arrow {
+  font-size: 16px;
+}
+
+.a11y-levels #aa-text,
+.a11y-levels #aaa-text {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.a11y-levels .progress-bar p {
+  margin: 0;
+}
+
+.a11y-levels .progress-bar p span {
+  display: inline-block;
+  width: 25px;
+  text-align: center;
+}
+
+
+.result {
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  border: 2px dashed darkgray;
+  border-radius: 3px;
+  text-align: center;
+  margin-top: 8px;
+}
+
+#accessibility-level {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 16px;
+  border: 1px solid black;
+}
+
+#accessibility-level::-webkit-progress-bar {
+  background-color: white;
+}
+
+#accessibility-level.percent0::-webkit-progress-value {
+  background-color: #b00000;
+}
+
+#accessibility-level.percent25::-webkit-progress-value {
+  background-color: #e19200;
+}
+
+#accessibility-level.percent50::-webkit-progress-value {
+  background-color: #d6d600;
+}
+
+#accessibility-level.percent75::-webkit-progress-value {
+  background-color: #00aa00;
+}
+
+details {
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+details details {
+  margin-left: 6px;
+}

@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "version": "1.0.1",
+  "name": "#Contrastou",
+  "description": "Mede taxa de contraste entre duas cores e indica se a combinação é acessível nos níveis da WCAG.",
+  "author": "Kelly L Gonzaga",
+  "action": {
+    "default_title": "#Contrastou",
+    "default_popup": "index.html",
+    "default_icon": "logo.png"
+  }
+}
